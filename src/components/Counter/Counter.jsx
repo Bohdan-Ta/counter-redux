@@ -15,7 +15,7 @@ function Counter() {
 
   return (
     <div className={s.Sections}>
-      <h1>COUNTER</h1>
+      <h1 className={s.Counter_heading}>COUNTER</h1>
       <div className={s.Counter}>
         <Value value={value} />
 
