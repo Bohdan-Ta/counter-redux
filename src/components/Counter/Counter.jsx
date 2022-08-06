@@ -6,7 +6,7 @@ import { increment, decrement } from "../../redux/counter-actions";
 import s from "./Counter.module.css";
 import { getStep, getValue } from "../../redux/counter-selectors";
 
-function Counter() {
+export default function Counter() {
   const dispatch = useDispatch();
   const value = useSelector(getValue);
   const step = useSelector(getStep);
@@ -28,14 +28,3 @@ function Counter() {
     </div>
   );
 }
-
-// const mapStateToProps = (state) => ({
-//   value: state.counter.value,
-//   step: state.counter.step,
-// });
-// const mapDispatchToProps = (dispatch) => ({
-//   onIncrement: (value) => dispatch(increment(value)),
-//   onDecrement: (value) => dispatch(decrement(value)),
-// });
-
-export default Counter;
